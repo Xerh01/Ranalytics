@@ -1,0 +1,55 @@
+---
+title: "hw"
+author: "rex"
+date: "2023-09-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Installing Packages
+
+Below are the codes to install necessary packages
+
+```{r echo=TRUE, eval=FALSE}
+#install all the packages required
+rm(list=ls())
+install.packages('knitr')
+install.packages('xfun')
+install.packages('abc')
+install.packages('vegan')
+install.packages('readxl')
+install.packages('formatR')
+install.packages('readxl')
+```
+
+## Read excel
+
+Import 'readxl'
+
+```{r echo=TRUE, eval=TRUE}
+library(readxl)
+```
+
+Read excel file and set variable for later use
+
+```{r echo=TRUE, eval=TRUE}
+fish<- read_excel("C:/Users/user/Documents/R/class2/hw/reef_fish.xlsx")
+```
+
+
+## Convert .xlsx file to .txt file
+
+Write a new .txt. file using the variable set above
+
+```{r echo=TRUE, eval=TRUE}
+write.table(fish, "C:/Users/user/Documents/R/class2/hw/reef_fish.txt")
+```
+
+Read and check the .txt file created
+
+```{r echo=TRUE, eval=TRUE}
+read.table("C:/Users/user/Documents/R/class2/hw/reef_fish.txt")
+```
