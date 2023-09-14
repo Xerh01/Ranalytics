@@ -1,6 +1,6 @@
 ---
 title: "Practice 1.3"
-author: "rex"
+author: "Rex"
 date: "2023-09-14"
 output: html_document
 ---
@@ -45,7 +45,7 @@ fish<- read_excel("C:/Users/user/Documents/R/class2/hw/reef_fish.xlsx")
 Write a new .txt. file using the variable set above
 
 ```{r echo=TRUE, eval=TRUE}
-write.table(fish, "C:/Users/user/Documents/R/class2/hw/reef_fish.txt")
+write.table(fish, "C:/Users/user/Documents/R/class2/hw/reef_fish.txt" )
 ```
 
 Read and check the .txt file created
